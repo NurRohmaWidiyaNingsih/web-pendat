@@ -448,14 +448,14 @@ document.write(`
 <h2>Aiven<a class="headerlink" href="#aiven" title="Link to this heading">#</a></h2>
 <p>Aiven adalah seperti apartemen di awan untuk menyimpan dan mengelola data dengan aman. Layaknya sewa apartemen, kita bisa mendapatkan semua yang kita butuhkan, seperti dapur lengkap dan kamar mandi yang nyaman. Aiven juga fleksibel; jika kita butuh lebih banyak ruang, Aiven akan menyediakannya dengan cepat. Keamanan data dijamin seperti memasang kunci ganda pada pintu rumah. Dengan Aiven, kita bisa menyimpan, mengatur, dan melindungi data dengan mudah di awan. Layanan database yang disediakan meliputi PostgreSQL, MySQL, Kafka, Elasticsearch, Cassandra, Redis, dan banyak lagi sesuai kebutuhan kita.</p>
 <p>Jadi, buat dulu database di aiven dengan pilihan layanan database PostgreSQL dan MySQL</p>
-<img src="./1.png/image-20240320-202000.png" width="" align="" /><p>Jika sudah, maka akan terlihat seperti tampilan diatas. Kita sudah memiliki dua cloud untuk MySQL dan PostgreSQL</p>
+<img src="./gambar/image-20240320-202000.png" width="" align="" /><p>Jika sudah, maka akan terlihat seperti tampilan diatas. Kita sudah memiliki dua cloud untuk MySQL dan PostgreSQL</p>
 </section>
 <section id="heidisql">
 <h2>HeidiSQL<a class="headerlink" href="#heidisql" title="Link to this heading">#</a></h2>
 <p>HeidiSQL adalah sebuah perangkat lunak manajemen basis data relasional yang dapat digunakan untuk mengelola dan mengelola server basis data seperti MySQL, MariaDB, PostgreSQL, dan Microsoft SQL Server. Ini adalah perangkat lunak sumber terbuka yang tersedia secara gratis dan kompatibel dengan sistem operasi Windows.</p>
 <p>Lakukan hosting atau cocokkan dengan yang ada pada aiven</p>
-<img src="./2.png/image-20240320-202754.png" width="" align="" /><p>Copy informasi di aiven seperti dibawah ini lalu masukkan pada heidisql. Lakukan hal yg sama untuk PostgreSQL</p>
-<img src="./3.png/image-20240320-203001.png" width="" align="" /></section>
+<img src="./gambar/image-20240320-202754.png" width="" align="" /><p>Copy informasi di aiven seperti dibawah ini lalu masukkan pada heidisql. Lakukan hal yg sama untuk PostgreSQL</p>
+<img src="./gambar/image-20240320-203001.png" width="" align="" /></section>
 <section id="deepnote">
 <h2>Deepnote<a class="headerlink" href="#deepnote" title="Link to this heading">#</a></h2>
 <p>Deepnote adalah platform yang memudahkan pengembangan dan kolaborasi dalam proyek data science dan machine learning. Ini menyediakan lingkungan cloud yang interaktif untuk menulis kode, menjalankan analisis data, dan membuat model machine learning tanpa perlu mengatur infrastruktur sendiri. Dengan fitur kolaboratif, pengguna dapat berbagi, bekerja bersama, dan mengkomunikasikan proyek mereka dengan tim. Deepnote juga menyediakan integrasi dengan berbagai sumber data dan alat analisis populer, membuatnya menjadi alat yang kuat bagi para praktisi data science dalam mengeksplorasi dan memodelkan data.</p>
@@ -522,7 +522,7 @@ document.write(`
 </section>
 <section id="gambar-bunga-irish">
 <h2>Gambar Bunga Irish<a class="headerlink" href="#gambar-bunga-irish" title="Link to this heading">#</a></h2>
-<img src="./4.png/image-20240320-204823.png" width="" align="" /></section>
+<img src="./gambar/image-20240320-204823.png" width="" align="" /></section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="preprocessing-data">
 <h1>PREPROCESSING DATA<a class="headerlink" href="#preprocessing-data" title="Link to this heading">#</a></h1>
@@ -2103,7 +2103,7 @@ Successfully installed mysql-connector-python-8.3.0
 <p>Untuk imputasi metode knn kita akan mencari selisih terdekat dari missing value yang ingin kita cari atau tetangga terdekat. Kita akan gunakan rumus euclidean.</p>
 <section id="rumus-euclidean-distance">
 <h3>Rumus Euclidean Distance<a class="headerlink" href="#rumus-euclidean-distance" title="Link to this heading">#</a></h3>
-<img src="./5.png/image-20240320-205906.png" width="" align="" /></section>
+<img src="./gambar/image-20240320-205906.png" width="" align="" /></section>
 <section id="identifikasi-masalah">
 <h3>Identifikasi Masalah<a class="headerlink" href="#identifikasi-masalah" title="Link to this heading">#</a></h3>
 <p>Lakukan update data  untuk skenario terdapat missing value</p>
@@ -2788,31 +2788,31 @@ Setelah outlier diidentifikasi, pengguna dapat memutuskan untuk menghapusnya dar
 </ol>
 <p>Dengan menggunakan metode LOF dengan jarak Euclidean, outlier dapat diidentifikasi berdasarkan perbedaan kepadatan lokalnya dengan tetangganya.</p>
 <p>Pada percobaan kali ini, saya membuat data keuangan. Memiliki 3 fitur yaitu Usia, Gaji, Pengeluaran dan jumlah datanya 10.</p>
-<img src="./6.png/image-20240321-000610.png" width="" align="" /></section>
+<img src="./gambar/image-20240321-000610.png" width="" align="" /></section>
 </section>
 <section id="menghitung-jarak-dan-menentukan-tetangga">
 <h2>Menghitung jarak dan menentukan tetangga<a class="headerlink" href="#menghitung-jarak-dan-menentukan-tetangga" title="Link to this heading">#</a></h2>
 <p>Pada perhitungan KNN akan menggunakan metode euclidean dengan K = 3 atau tetangga terdekat ke 3.</p>
-<img src="./7.png/image-20240321-000809.png" width="" align="" /></section>
+<img src="./gambar/image-20240321-000809.png" width="" align="" /></section>
 <section id="menghitung-reachability-distance-rd">
 <h2>Menghitung Reachability Distance (RD)<a class="headerlink" href="#menghitung-reachability-distance-rd" title="Link to this heading">#</a></h2>
 <p>Reachability Distance (RD) adalah cara untuk mengukur seberapa dekat dua titik dalam data. Ini penting saat kita ingin tahu apakah dua titik itu “tetangga” atau tidak. Bayangkan Anda memiliki dua rumah di jalan yang berbeda. Jarak antara kedua rumah itu adalah jarak antara mereka. Tapi jika rumah Anda berada di jalan utama dan rumah tetangga Anda di gang kecil, kemungkinan besar Anda akan lebih dekat dengan tetangga Anda karena mudah diakses daripada rumah yang jauh di jalan besar. Ini mirip dengan bagaimana RD bekerja.</p>
 <p>Jadi, ketika kita ingin tahu apakah dua titik dalam data itu tetangga atau tidak, kita menggunakan RD. Ini dihitung dengan mengukur jarak antara dua titik. Tapi, jika salah satu titik itu punya banyak tetangga di sekitarnya, maka kita juga memperhitungkan jarak terpendeknya ke tetangga-tetangganya yang terdekat. Dengan begitu, kita bisa memutuskan apakah dua titik itu dekat cukup untuk dianggap tetangga. Jika jaraknya lebih kecil dari nilai tertentu yang telah kita tentukan sebelumnya, maka mereka dianggap tetangga.</p>
 <p>Contohnya seperti pada id 1 memiliki nilai jarak tetangga ke-3 yaitu 3,1622777 berarti tetangga yang masuk ke dalamnya yang memiliki niali kurang atau sama dengan 3,1622777 yang artinya berisi objek { 3,4,8 }. Lanjutkan untuk objek yang lain.</p>
-<img src="./8.png/image-20240321-002616.png" width="" align="" /><p>Selanjutnya adalah menghitung RD(Reachability Distance) dari masing-masing objek</p>
-<img src="./9.png/image-20240321-004619.png" width="" align="" /><img src="./10.png/image-20240321-014250.png" width="" align="" /></section>
+<img src="./gambar/image-20240321-002616.png" width="" align="" /><p>Selanjutnya adalah menghitung RD(Reachability Distance) dari masing-masing objek</p>
+<img src="./gambar/image-20240321-004619.png" width="" align="" /><img src="./gambar/image-20240321-014250.png" width="" align="" /></section>
 <section id="menghitung-local-reachability-distance-lrd">
 <h2>Menghitung Local Reachability Distance (LRD)<a class="headerlink" href="#menghitung-local-reachability-distance-lrd" title="Link to this heading">#</a></h2>
 <p>Rumus LRD:</p>
-<img src="./ke11.png/image-20240321-004823.png" width="" align="" /><p>Kesimpulan dari rumus diatas LRD merupakan hasil pembagian banyak jumlah tetangga ke-n dari objek lalu dibagi dengan total dari reachdistance ability objek tersebut.</p>
+<img src="./gambar/image-20240321-004823.png" width="" align="" /><p>Kesimpulan dari rumus diatas LRD merupakan hasil pembagian banyak jumlah tetangga ke-n dari objek lalu dibagi dengan total dari reachdistance ability objek tersebut.</p>
 <p>Hasil perhitungannya adalah:</p>
-<img src="./12.png/image-20240321-015922.png" width="" align="" /></section>
+<img src="./gambar/image-20240321-015922.png" width="" align="" /></section>
 <section id="menghitung-local-outlier-factor-lof">
 <h2>Menghitung Local Outlier Factor(LOF)<a class="headerlink" href="#menghitung-local-outlier-factor-lof" title="Link to this heading">#</a></h2>
 <p>Rumusnya:</p>
-<img src="./13.png/image-20240321-005159.png" width="" align="" /><p>Dari rumus tersebut LOF merupakan hasil perkalian jumlah nilai lrd suatu objek dikali jumlah reachability distance suatu objek.</p>
+<img src="./gambar/image-20240321-005159.png" width="" align="" /><p>Dari rumus tersebut LOF merupakan hasil perkalian jumlah nilai lrd suatu objek dikali jumlah reachability distance suatu objek.</p>
 <p>Hasil perhitungannya adalah:</p>
-<img src="./14.png/image-20240321-021432.png" width="" align="" /><p>Dapat disimpulkan bahwa lof3(5) merupakan sebuah data outlier. Karena rentang nilai yang sangat jauh dengan data lainnya yaitu 62,656255</p>
+<img src="./gambar/image-20240321-021432.png" width="" align="" /><p>Dapat disimpulkan bahwa lof3(5) merupakan sebuah data outlier. Karena rentang nilai yang sangat jauh dengan data lainnya yaitu 62,656255</p>
 </section>
 <section id="menghitung-menggunakan-python-scikit-learn">
 <h2>Menghitung Menggunakan Python(scikit-learn)<a class="headerlink" href="#menghitung-menggunakan-python-scikit-learn" title="Link to this heading">#</a></h2>
