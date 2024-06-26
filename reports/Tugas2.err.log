@@ -21,8 +21,8 @@ df_2 = _deepnote_execute_sql('ALTER TABLE preminmean DROP COLUMN PetalWidthCm', 
 df_2
 ------------------
 
-[1;31m-------------------------------------[0m
-[1;31mNameError[0mTraceback (most recent call last)
+[1;31m---------------------------------------------------------------------------[0m
+[1;31mNameError[0m                                 Traceback (most recent call last)
 Cell [1;32mIn [1], line 1[0m
 [1;32m----> 1[0m df_2 [38;5;241m=[39m [43m_deepnote_execute_sql[49m([38;5;124m'[39m[38;5;124mALTER TABLE preminmean DROP COLUMN PetalWidthCm[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124mSQL_0588F7A5_1B73_498D_A102_830B1FAEB649[39m[38;5;124m'[39m, audit_sql_comment[38;5;241m=[39m[38;5;124m'[39m[38;5;124m'[39m, sql_cache_mode[38;5;241m=[39m[38;5;124m'[39m[38;5;124mcache_disabled[39m[38;5;124m'[39m)
 [0;32m      2[0m df_2

@@ -1,0 +1,2479 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>BREAST CANCER &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="assets/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="assets/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="assets/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="assets/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="assets/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="assets/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="assets/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="assets/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="assets/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="assets/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="assets/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="assets/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="assets/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="assets/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="assets/documentation_options.js?v=9eb32ce0"></script>
+    <script src="assets/doctools.js?v=888ff710"></script>
+    <script src="assets/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="assets/clipboard.min.js?v=a7894cd8"></script>
+    <script src="assets/copybutton.js?v=f281be69"></script>
+    <script src="assets/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="assets/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="assets/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="assets/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'project_akhir_individu';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
+    <link rel="prev" title="Markdown Files" href="markdown.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="assets/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="assets/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">BREAST CANCER</a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fproject_akhir_individu.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/project_akhir_individu.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>BREAST CANCER</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">BREAST CANCER</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan-studi-kasus-breast-cancer">TUJUAN STUDI KASUS BREAST CANCER</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">PENGERTIAN</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fitur-fitur-yang-perlu-dipahami">FITUR-FITUR YANG PERLU DIPAHAMI</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding">DATA UNDERSTANDING</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collecting-data-mengumpulkan-data">COLLECTING DATA(MENGUMPULKAN DATA)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataframe-breast-cancer">DATAFRAME BREAST CANCER</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jumlah-data">Jumlah Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipe-data-pada-setiap-fitur">TIPE DATA PADA SETIAP FITUR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eksplorasi-data">EKSPLORASI DATA</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikasi-kualitas-data">IDENTIFIKASI KUALITAS DATA</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikasi-missing-value">IDENTIFIKASI MISSING VALUE</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-data">PREPROCESSING DATA</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#modelling-data">MODELLING DATA</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#knn">KNN</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naive-bayes">NAIVE BAYES</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stacking-classifier">Stacking Classifier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bagging-bootstrap-aggregating">Bagging (Bootstrap Aggregating)</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-implementasi">HASIL IMPLEMENTASI</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="breast-cancer">
+<h1>BREAST CANCER<a class="headerlink" href="#breast-cancer" title="Link to this heading">#</a></h1>
+<section id="tujuan-studi-kasus-breast-cancer">
+<h2>TUJUAN STUDI KASUS BREAST CANCER<a class="headerlink" href="#tujuan-studi-kasus-breast-cancer" title="Link to this heading">#</a></h2>
+<p>Memahami kanker payudara dan fitur-fiturnya memiliki tujuan penting, terutama dari sisi kesehatan. Berikut adalah beberapa alasan mengapa pemahaman ini sangat penting:</p>
+<ol class="arabic simple">
+<li><p>Deteksi Dini dan Diagnosis</p></li>
+</ol>
+<p>Deteksi Dini:</p>
+<ul class="simple">
+<li><p>Kanker payudara yang terdeteksi pada tahap awal memiliki peluang lebih besar untuk berhasil diobati.</p></li>
+<li><p>Pemahaman tentang gejala awal dan faktor risiko dapat meningkatkan kesadaran masyarakat untuk menjalani pemeriksaan rutin dan skrining mammografi.</p></li>
+</ul>
+<p>Diagnosis yang Akurat:</p>
+<ul class="simple">
+<li><p>Fitur-fitur seperti ketebalan klump, ukuran dan bentuk sel, serta pola nuklir sel dapat membantu dokter dalam mendiagnosis kanker payudara dengan lebih akurat.</p></li>
+<li><p>Teknik diagnostik yang lebih baik dapat mengurangi risiko misdiagnosis dan pengobatan yang tidak perlu.</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Pengembangan Pengobatan yang Efektif</p></li>
+</ol>
+<p>Perawatan Personalisasi:</p>
+<ul class="simple">
+<li><p>Memahami fitur-fitur spesifik dari kanker payudara membantu dalam pengembangan perawatan yang disesuaikan dengan karakteristik individu dari tumor.</p></li>
+<li><p>Perawatan yang lebih spesifik dapat meningkatkan efektivitas terapi dan mengurangi efek samping.</p></li>
+</ul>
+<p>Kemajuan dalam Terapi:</p>
+<ul class="simple">
+<li><p>Studi tentang fitur biologis kanker payudara dapat mengarah pada penemuan target terapi baru, seperti terapi hormon atau imunoterapi.</p></li>
+<li><p>Penelitian tentang bagaimana sel kanker berkembang dan bertahan dapat menginformasikan pengembangan obat baru yang lebih efektif.</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>Peningkatan Prognosis dan Kualitas Hidup</p></li>
+</ol>
+<p>Prognosis yang Lebih Baik:</p>
+<ul class="simple">
+<li><p>Analisis fitur tumor dapat membantu memprediksi bagaimana kanker akan berkembang dan seberapa agresifnya.</p></li>
+<li><p>Prognosis yang lebih baik memungkinkan dokter dan pasien membuat keputusan yang lebih tepat mengenai pengobatan dan perawatan jangka panjang.</p></li>
+</ul>
+<p>Kualitas Hidup:</p>
+<ul class="simple">
+<li><p>Pemahaman yang mendalam tentang kanker payudara dapat membantu mengembangkan strategi yang mengurangi dampak negatif dari pengobatan terhadap kualitas hidup pasien.</p></li>
+<li><p>Dukungan psikososial dan intervensi lainnya dapat dirancang lebih efektif berdasarkan karakteristik dan kebutuhan pasien.</p></li>
+</ul>
+<ol class="arabic simple" start="4">
+<li><p>Pencegahan</p></li>
+</ol>
+<p>Identifikasi Faktor Risiko:</p>
+<ul class="simple">
+<li><p>Penelitian fitur dan pola kanker payudara dapat mengidentifikasi faktor risiko yang signifikan, seperti genetik, lingkungan, dan gaya hidup.</p></li>
+<li><p>Informasi ini dapat digunakan untuk mengembangkan program pencegahan yang efektif, seperti kampanye kesadaran dan pendidikan kesehatan masyarakat.</p></li>
+</ul>
+<p>Kesimpulan</p>
+<p>Memahami kanker payudara dan fitur-fiturnya adalah kunci untuk meningkatkan deteksi dini, diagnosis, pengobatan, dan pencegahan. Dalam sisi kesehatan, ini berarti peningkatan tingkat kesembuhan, pengurangan angka kematian, dan peningkatan kualitas hidup bagi mereka yang terkena dampak. Dengan kemajuan teknologi dan penelitian, pengetahuan ini terus berkembang, memberikan harapan baru dan solusi yang lebih baik untuk pasien kanker payudara di seluruh dunia.</p>
+</section>
+<section id="pengertian">
+<h2>PENGERTIAN<a class="headerlink" href="#pengertian" title="Link to this heading">#</a></h2>
+<p>Kanker payudara adalah jenis kanker yang berkembang dari sel-sel payudara. Ini adalah salah satu jenis kanker yang paling umum terjadi pada wanita, meskipun pria juga dapat mengalaminya.</p>
+<p>Kanker payudara terjadi ketika sel-sel di payudara mulai tumbuh tidak terkendali. Sel-sel ini biasanya membentuk tumor yang dapat dirasakan sebagai benjolan atau terlihat pada pemeriksaan sinar-X. Tumor bersifat ganas jika sel-selnya dapat menyebar ke bagian tubuh lain.</p>
+<p>Kanker payudara dapat diobati dengan efektif jika terdeteksi lebih awal. Oleh karena itu, penting untuk melakukan pemeriksaan rutin dan menyadari perubahan yang terjadi pada payudara.</p>
+<p>Faktor Risiko Kanker Payudara:</p>
+<ul class="simple">
+<li><p>Jenis Kelamin:
+Wanita memiliki risiko lebih tinggi daripada pria.</p></li>
+<li><p>Usia:
+Risiko meningkat seiring bertambahnya usia.</p></li>
+<li><p>Riwayat Keluarga:
+Memiliki anggota keluarga dengan kanker payudara meningkatkan risiko.</p></li>
+<li><p>Genetik:
+Mutasi gen tertentu, seperti BRCA1 dan BRCA2, meningkatkan risiko.</p></li>
+<li><p>Riwayat Pribadi Kanker Payudara:
+Pernah menderita kanker payudara meningkatkan risiko kambuh.</p></li>
+<li><p>Hormon:
+Terapi hormon setelah menopause dan penggunaan kontrasepsi hormonal dapat meningkatkan risiko.</p></li>
+<li><p>Gaya Hidup:
+Faktor seperti obesitas, alkohol, dan kurangnya aktivitas fisik dapat berkontribusi.</p></li>
+</ul>
+<p>Gejala Kanker Payudara:</p>
+<ul class="simple">
+<li><p>Benjolan atau massa di payudara</p></li>
+<li><p>Perubahan ukuran atau bentuk payudara</p></li>
+<li><p>Perubahan pada kulit payudara, seperti kerutan atau lesung pipit</p></li>
+<li><p>Keluar cairan dari puting yang bukan ASI</p></li>
+<li><p>Kemerahan atau perubahan kulit di sekitar puting</p></li>
+</ul>
+<p>Diagnosa Kanker Payudara:</p>
+<ul class="simple">
+<li><p>Mamografi: Pemeriksaan sinar-X pada payudara.</p></li>
+<li><p>Ultrasonografi: Menggunakan gelombang suara untuk membuat gambar jaringan payudara.</p></li>
+<li><p>Biopsi: Mengambil sampel jaringan payudara untuk diperiksa lebih lanjut di laboratorium.</p></li>
+<li><p>MRI: Menggunakan medan magnet dan gelombang radio untuk membuat gambar detail dari payudara.</p></li>
+<li><p>Pengobatan Kanker Payudara:</p></li>
+<li><p>Operasi: Mengangkat tumor atau payudara (mastektomi).</p></li>
+<li><p>Radioterapi: Menggunakan sinar energi tinggi untuk membunuh sel kanker.</p></li>
+<li><p>Kemoterapi: Menggunakan obat-obatan untuk membunuh sel kanker.</p></li>
+<li><p>Terapi Hormon: Menghambat hormon yang dapat mendorong pertumbuhan kanker.</p></li>
+<li><p>Terapi Target: Menggunakan obat-obatan yang menargetkan protein tertentu pada sel kanker.</p></li>
+</ul>
+</section>
+<section id="fitur-fitur-yang-perlu-dipahami">
+<h2>FITUR-FITUR YANG PERLU DIPAHAMI<a class="headerlink" href="#fitur-fitur-yang-perlu-dipahami" title="Link to this heading">#</a></h2>
+<p>Untuk Mengetahui apakah benjolan pada payudara tersebut termasuk tumor jinak atau ganas kita perlu memahami serta mengetahui beberapa fitur, antara lain:</p>
+<ol class="arabic simple">
+<li><p>Sample_code_number</p>
+<ul class="simple">
+<li><p>Peran: Pengenal unik (ID)</p></li>
+<li><p>Deskripsi: Ini adalah nomor identifikasi unik untuk setiap sampel yang diuji. Fitur ini tidak memberikan informasi tentang kanker, hanya untuk identifikasi sampel saja.</p></li>
+</ul>
+</li>
+</ol>
+<ol class="arabic simple" start="2">
+<li><p>Clump_thickness (Ketebalan Gumpalan)</p>
+<ul class="simple">
+<li><p>Deskripsi: Mengukur seberapa tebal kelompok sel dalam sampel. Gumpalan yang lebih tebal bisa menjadi tanda adanya tumor atau kanker. Ukuran sel diisi dari 1-10.</p></li>
+</ul>
+</li>
+</ol>
+<ol class="arabic simple" start="3">
+<li><p>Uniformity_of_cell_size (Keseragaman Ukuran Sel)</p>
+<ul class="simple">
+<li><p>Deskripsi: Mengukur seberapa seragam ukuran sel-sel dalam sampel. Jika sel-sel sangat bervariasi dalam ukuran, ini bisa menjadi indikasi adanya kanker, karena sel kanker cenderung bervariasi dalam ukuran. Ukuran sel diisi dari 1-10.</p></li>
+</ul>
+</li>
+</ol>
+<ol class="arabic simple" start="4">
+<li><p>Uniformity_of_cell_shape (Keseragaman Bentuk Sel)</p>
+<ul class="simple">
+<li><p>Deskripsi: Mengukur seberapa seragam bentuk sel-sel dalam sampel. Sel kanker sering memiliki bentuk yang tidak seragam, jadi variasi besar dalam bentuk sel bisa menunjukkan adanya kanker. Ukuran sel diisi dari 1-10.</p></li>
+</ul>
+</li>
+</ol>
+<ol class="arabic simple" start="5">
+<li><p>Marginal_adhesion (Adhesi Marginal)</p>
+<ul class="simple">
+<li><p>Deskripsi: Mengukur kemampuan sel-sel untuk menempel satu sama lain di tepi. Sel kanker biasanya kurang menempel satu sama lain dibandingkan dengan sel normal. Ukuran sel diisi dari 1-10.</p></li>
+</ul>
+</li>
+</ol>
+<ol class="arabic simple" start="6">
+<li><p>Single_epithelial_cell_size (Ukuran Sel Epitel Tunggal)</p>
+<ul class="simple">
+<li><p>Deskripsi: Mengukur ukuran sel-sel epitel tunggal. Sel kanker cenderung lebih besar dari sel normal, jadi ukuran yang lebih besar bisa menjadi tanda kanker. Ukuran sel diisi dari 1-10.</p></li>
+</ul>
+</li>
+</ol>
+<ol class="arabic simple" start="7">
+<li><p>Bare_nuclei (Nuklei Telanjang)</p>
+<ul class="simple">
+<li><p>Deskripsi: Mengukur jumlah inti sel yang tidak dikelilingi oleh sitoplasma. Kehadiran banyak inti sel yang telanjang bisa menunjukkan adanya kanker, karena sel kanker sering memiliki inti yang lebih terlihat. Ukuran sel diisi dari 1-10.</p></li>
+</ul>
+</li>
+</ol>
+<ol class="arabic simple" start="8">
+<li><p>Bland_chromatin (Kromatin Biasa)</p>
+<ul class="simple">
+<li><p>Deskripsi: Mengukur tampilan kromatin di dalam inti sel. Kromatin yang normal tampak halus dan seragam, sedangkan sel kanker sering memiliki kromatin yang kasar atau tidak teratur. Ukuran sel diisi dari 1-10.</p></li>
+</ul>
+</li>
+</ol>
+<ol class="arabic simple" start="9">
+<li><p>Normal_nucleoli (Nukleolus Normal)</p>
+<ul class="simple">
+<li><p>Deskripsi: Mengukur tampilan nukleolus di dalam inti sel. Nukleolus yang membesar atau memiliki tampilan tidak normal bisa menunjukkan adanya kanker, karena sel kanker cenderung memiliki nukleolus yang lebih besar dan lebih menonjol. Ukuran sel diisi dari 1-10.</p></li>
+</ul>
+</li>
+</ol>
+<ol class="arabic simple" start="10">
+<li><p>Mitoses (Mitosis)</p>
+<ul class="simple">
+<li><p>Deskripsi: Mengukur jumlah sel yang sedang membelah. Tingginya tingkat pembelahan sel bisa menjadi tanda adanya kanker, karena sel kanker sering membelah lebih cepat daripada sel normal. Ukuran sel diisi dari 1-10.</p></li>
+</ul>
+</li>
+</ol>
+<p>Setiap fitur ini membantu dalam menilai apakah sampel sel menunjukkan karakteristik kanker atau tidak. Kombinasi dari semua fitur ini digunakan untuk membuat diagnosis yang lebih akurat. Untuk penilaian ukuran 1-10 didasarkan oleh pengamatan para ahlinya.</p>
+<p>Selanjutnya maka akan dilakukan klasifikasi atau class penentuan bahwa benjolannya termasuk tumor jinak atau ganas.</p>
+<p>Class nya berlabel 2 (untuk jinak) 4 (untuk ganas)</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="data-understanding">
+<h1>DATA UNDERSTANDING<a class="headerlink" href="#data-understanding" title="Link to this heading">#</a></h1>
+<section id="collecting-data-mengumpulkan-data">
+<h2>COLLECTING DATA(MENGUMPULKAN DATA)<a class="headerlink" href="#collecting-data-mengumpulkan-data" title="Link to this heading">#</a></h2>
+<p>Dataset ini merupakan dataset mengenai Breast Cancer Wisconsin (Original). Yaitu kanker payudara yang terjadi di daerah wisconsin. Berikut adalah link datasetnya : <a class="reference external" href="https://archive.ics.uci.edu/dataset/15/breast+cancer+wisconsin+original.hh">https://archive.ics.uci.edu/dataset/15/breast+cancer+wisconsin+original.hh</a></p>
+<p>Data ini didapatkan dari ucidataset, dan data yang akan kami pelajari adalah breast cancer (kanker payudara). Berikut adalah langkah penarikan data. Mengambil langsung dari database ucidataset.</p>
+<img src="gambar/image-20240622-123817.png" width="" align="" /><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ucimlrepo</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: ucimlrepo in c:\users\azgar\appdata\local\programs\python\python310\lib\site-packages (0.0.7)Note: you may need to restart the kernel to use updated packages.
+
+Requirement already satisfied: pandas&gt;=1.0.0 in c:\users\azgar\appdata\local\programs\python\python310\lib\site-packages (from ucimlrepo) (2.2.2)
+Requirement already satisfied: certifi&gt;=2020.12.5 in c:\users\azgar\appdata\local\programs\python\python310\lib\site-packages (from ucimlrepo) (2022.12.7)
+Requirement already satisfied: numpy&gt;=1.22.4 in c:\users\azgar\appdata\local\programs\python\python310\lib\site-packages (from pandas&gt;=1.0.0-&gt;ucimlrepo) (1.24.3)
+Requirement already satisfied: tzdata&gt;=2022.7 in c:\users\azgar\appdata\local\programs\python\python310\lib\site-packages (from pandas&gt;=1.0.0-&gt;ucimlrepo) (2024.1)
+Requirement already satisfied: pytz&gt;=2020.1 in c:\users\azgar\appdata\local\programs\python\python310\lib\site-packages (from pandas&gt;=1.0.0-&gt;ucimlrepo) (2022.6)
+Requirement already satisfied: python-dateutil&gt;=2.8.2 in c:\users\azgar\appdata\local\programs\python\python310\lib\site-packages (from pandas&gt;=1.0.0-&gt;ucimlrepo) (2.8.2)
+Requirement already satisfied: six&gt;=1.5 in c:\users\azgar\appdata\local\programs\python\python310\lib\site-packages (from python-dateutil&gt;=2.8.2-&gt;pandas&gt;=1.0.0-&gt;ucimlrepo) (1.16.0)
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[notice] A new release of pip available: 22.2.2 -&gt; 24.1
+[notice] To update, run: C:\Users\azgar\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip
+</pre></div>
+</div>
+</div>
+</div>
+<p>Langkah ini untuk melakukan penarikan dataset dan disimpan dalam file berbentuk csv yang saya beri nama breast_cancer.csv</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">ucimlrepo</span> <span class="kn">import</span> <span class="n">fetch_ucirepo</span> 
+  
+<span class="c1"># fetch dataset </span>
+<span class="n">breast_cancer_wisconsin_original</span> <span class="o">=</span> <span class="n">fetch_ucirepo</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span> 
+  
+<span class="c1"># data (as pandas dataframes) </span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">breast_cancer_wisconsin_original</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">features</span> 
+<span class="n">y</span> <span class="o">=</span> <span class="n">breast_cancer_wisconsin_original</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">targets</span> 
+  
+<span class="n">df_breast</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Simpan DataFrame ke dalam file CSV</span>
+<span class="n">df_breast</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;breast_cancer.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Data telah disimpan ke file &#39;breast_cancer.csv&#39;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Data telah disimpan ke file &#39;breast_cancer.csv&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>Ini untuk menampilkan semua kolom atau fitur yang ada</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_columns&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>  <span class="c1"># Menampilkan semua kolom</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_breast</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     Clump_thickness  Uniformity_of_cell_size  Uniformity_of_cell_shape  \
+0                  5                        1                         1   
+1                  5                        4                         4   
+2                  3                        1                         1   
+3                  6                        8                         8   
+4                  4                        1                         1   
+..               ...                      ...                       ...   
+694                3                        1                         1   
+695                2                        1                         1   
+696                5                       10                        10   
+697                4                        8                         6   
+698                4                        8                         8   
+
+     Marginal_adhesion  Single_epithelial_cell_size  Bare_nuclei  \
+0                    1                            2          1.0   
+1                    5                            7         10.0   
+2                    1                            2          2.0   
+3                    1                            3          4.0   
+4                    3                            2          1.0   
+..                 ...                          ...          ...   
+694                  1                            3          2.0   
+695                  1                            2          1.0   
+696                  3                            7          3.0   
+697                  4                            3          4.0   
+698                  5                            4          5.0   
+
+     Bland_chromatin  Normal_nucleoli  Mitoses  Class  
+0                  3                1        1      2  
+1                  3                2        1      2  
+2                  3                1        1      2  
+3                  3                7        1      2  
+4                  3                1        1      2  
+..               ...              ...      ...    ...  
+694                1                1        1      2  
+695                1                1        1      2  
+696                8               10        2      4  
+697               10                6        1      4  
+698               10                4        1      4  
+
+[699 rows x 10 columns]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="dataframe-breast-cancer">
+<h2>DATAFRAME BREAST CANCER<a class="headerlink" href="#dataframe-breast-cancer" title="Link to this heading">#</a></h2>
+<p>Bagian ini untuk menampilkan dataset dalam bentuk dataframe</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">df_breast</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Clump_thickness</th>
+      <th>Uniformity_of_cell_size</th>
+      <th>Uniformity_of_cell_shape</th>
+      <th>Marginal_adhesion</th>
+      <th>Single_epithelial_cell_size</th>
+      <th>Bare_nuclei</th>
+      <th>Bland_chromatin</th>
+      <th>Normal_nucleoli</th>
+      <th>Mitoses</th>
+      <th>Class</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>5</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1.0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>5</td>
+      <td>4</td>
+      <td>4</td>
+      <td>5</td>
+      <td>7</td>
+      <td>10.0</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2.0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>6</td>
+      <td>8</td>
+      <td>8</td>
+      <td>1</td>
+      <td>3</td>
+      <td>4.0</td>
+      <td>3</td>
+      <td>7</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1.0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>694</th>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>2.0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>695</th>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1.0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>696</th>
+      <td>5</td>
+      <td>10</td>
+      <td>10</td>
+      <td>3</td>
+      <td>7</td>
+      <td>3.0</td>
+      <td>8</td>
+      <td>10</td>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>697</th>
+      <td>4</td>
+      <td>8</td>
+      <td>6</td>
+      <td>4</td>
+      <td>3</td>
+      <td>4.0</td>
+      <td>10</td>
+      <td>6</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>698</th>
+      <td>4</td>
+      <td>8</td>
+      <td>8</td>
+      <td>5</td>
+      <td>4</td>
+      <td>5.0</td>
+      <td>10</td>
+      <td>4</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+<p>699 rows × 10 columns</p>
+</div></div></div>
+</div>
+</section>
+<section id="jumlah-data">
+<h2>Jumlah Data<a class="headerlink" href="#jumlah-data" title="Link to this heading">#</a></h2>
+<p>Jumlah data breast cancer berjumlah 699 data</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">df_breast</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>699
+</pre></div>
+</div>
+</div>
+</div>
+<p>Jumlah data pada masing-masing kategori class.</p>
+<p>Pada kategori 2 jumlah datanya 458</p>
+<p>Pada kategori 4 jumlah datanya 241</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import library yang diperlukan</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># Memuat dataset dari file CSV</span>
+<span class="n">df_breast</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;breast_cancer.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># Menampilkan jumlah total data</span>
+<span class="n">total_data</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_breast</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Jumlah total data: </span><span class="si">{</span><span class="n">total_data</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Menampilkan jumlah data pada masing-masing class</span>
+<span class="n">class_counts</span> <span class="o">=</span> <span class="n">df_breast</span><span class="p">[</span><span class="s1">&#39;Class&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah data pada masing-masing class:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">class_counts</span><span class="p">)</span>
+
+<span class="c1"># Menampilkan jumlah data pada class dengan kategori 2</span>
+<span class="n">class_2_count</span> <span class="o">=</span> <span class="n">class_counts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># .get(2, 0) untuk menangani jika tidak ada class 2</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Jumlah data pada class kategori 2: </span><span class="si">{</span><span class="n">class_2_count</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Menampilkan jumlah data pada class dengan kategori 4</span>
+<span class="n">class_4_count</span> <span class="o">=</span> <span class="n">class_counts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># .get(4, 0) untuk menangani jika tidak ada class 4</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Jumlah data pada class kategori 4: </span><span class="si">{</span><span class="n">class_4_count</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Jumlah total data: 699
+Jumlah data pada masing-masing class:
+Class
+2    458
+4    241
+Name: count, dtype: int64
+Jumlah data pada class kategori 2: 458
+Jumlah data pada class kategori 4: 241
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="tipe-data-pada-setiap-fitur">
+<h2>TIPE DATA PADA SETIAP FITUR<a class="headerlink" href="#tipe-data-pada-setiap-fitur" title="Link to this heading">#</a></h2>
+<p>Dalam data mining, jika ada dua kategori dalam sebuah kelas, tipe data ini disebut sebagai data kategorikal biner atau data biner. Berikut adalah penjelasan lebih lanjut:</p>
+<p>Tipe Data Kategorikal Biner</p>
+<ol class="arabic simple">
+<li><p>Definisi:</p>
+<ul class="simple">
+<li><p>Data kategorikal biner adalah data yang memiliki dua kemungkinan kategori atau kelas. Contohnya, jika kelas memiliki dua kategori seperti “malignant” (ganas) dan “benign” (jinak) dalam konteks kanker payudara, maka ini adalah data biner.</p></li>
+</ul>
+</li>
+</ol>
+<ol class="arabic simple" start="2">
+<li><p>Contoh Lain:</p>
+<ul class="simple">
+<li><p>Ya atau Tidak</p></li>
+<li><p>Pria atau Wanita</p></li>
+<li><p>Sukses atau Gagal</p></li>
+<li><p>0 atau 1 (dalam representasi biner)</p></li>
+</ul>
+</li>
+</ol>
+<p>Tipe Data dalam Data Mining</p>
+<ol class="arabic simple">
+<li><p>Kategorikal (Nominal):</p>
+<ul class="simple">
+<li><p>Data yang dikategorikan berdasarkan nama atau label tanpa urutan tertentu. Misalnya, warna (merah, hijau, biru), jenis kelamin (pria, wanita).</p></li>
+<li><p>Dalam kasus dua kategori, ini dikenal sebagai data biner.</p></li>
+</ul>
+</li>
+</ol>
+<ol class="arabic simple" start="2">
+<li><p>Ordinal:</p>
+<ul class="simple">
+<li><p>Data yang memiliki kategori dengan urutan atau ranking. Misalnya, skala penilaian (rendah, sedang, tinggi).</p></li>
+</ul>
+</li>
+</ol>
+<ol class="arabic simple" start="3">
+<li><p>Interval:</p>
+<ul class="simple">
+<li><p>Data numerik di mana jarak antara dua nilai adalah bermakna, tetapi tidak ada titik nol absolut. Contohnya, suhu dalam Celcius atau Fahrenheit.</p></li>
+</ul>
+</li>
+</ol>
+<ol class="arabic simple" start="4">
+<li><p>Rasio:</p>
+<ul class="simple">
+<li><p>Data numerik dengan titik nol absolut, yang memungkinkan perbandingan rasio. Contohnya, tinggi badan, berat badan.</p></li>
+</ul>
+</li>
+</ol>
+<p>Penggunaan Data Biner dalam Data Mining</p>
+<ul class="simple">
+<li><p>Klasifikasi: Model klasifikasi seperti regresi logistik, pohon keputusan, dan Support Vector Machines (SVM) sering digunakan untuk memprediksi kelas biner.</p></li>
+<li><p>Clustering: Algoritma clustering seperti K-Means dapat digunakan untuk mengelompokkan data ke dalam dua kategori.</p></li>
+<li><p>Association Rule Mining: Mencari hubungan atau pola antara variabel dalam dataset biner.</p></li>
+</ul>
+<p>Contoh dalam Konteks Kanker Payudara
+Dalam dataset kanker payudara, kategori kelas bisa berupa:</p>
+<ul class="simple">
+<li><p>Malignant (Ganas): Diwakili oleh satu nilai, misalnya 1.</p></li>
+<li><p>Benign (Jinak): Diwakili oleh nilai lainnya, misalnya 0.</p></li>
+</ul>
+<p>Model pembelajaran mesin akan dilatih untuk memprediksi apakah sampel baru termasuk dalam kategori “malignant” atau “benign” berdasarkan fitur-fitur yang ada.</p>
+<p>Representasi Data Biner</p>
+<ul class="simple">
+<li><p>Label: Kategori sering direpresentasikan sebagai label teks atau angka. Misalnya, “malignant” dan “benign” atau 1 dan 0.</p></li>
+<li><p>Encoding: Dalam pembelajaran mesin, kategori biner sering di-encode sebagai 0 dan 1 untuk memudahkan proses komputasi.</p></li>
+</ul>
+<p>Kesimpulan
+Jika ada dua kategori kelas dalam sebuah dataset, tipe data ini disebut sebagai data kategorikal biner atau data biner. Ini adalah bentuk khusus dari data kategorikal di mana hanya ada dua kemungkinan nilai. Data ini sering digunakan dalam berbagai teknik analisis dan model pembelajaran mesin untuk klasifikasi biner.</p>
+<p>Semua fitur bertipe data numerik, dan untuk class bertipe data biner (kategorikal).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_breast</span><span class="o">.</span><span class="n">dtypes</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Clump_thickness                  int64
+Uniformity_of_cell_size          int64
+Uniformity_of_cell_shape         int64
+Marginal_adhesion                int64
+Single_epithelial_cell_size      int64
+Bare_nuclei                    float64
+Bland_chromatin                  int64
+Normal_nucleoli                  int64
+Mitoses                          int64
+Class                            int64
+dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="eksplorasi-data">
+<h2>EKSPLORASI DATA<a class="headerlink" href="#eksplorasi-data" title="Link to this heading">#</a></h2>
+<section id="identifikasi-kualitas-data">
+<h3>IDENTIFIKASI KUALITAS DATA<a class="headerlink" href="#identifikasi-kualitas-data" title="Link to this heading">#</a></h3>
+</section>
+<section id="identifikasi-missing-value">
+<h3>IDENTIFIKASI MISSING VALUE<a class="headerlink" href="#identifikasi-missing-value" title="Link to this heading">#</a></h3>
+<p>Missing value adalah data yang tidak tersedia atau hilang dalam sebuah dataset. Ini dapat terjadi karena berbagai alasan seperti kesalahan manusia, kegagalan teknis, atau data yang memang tidak ada.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># Memeriksa apakah ada nilai yang hilang dalam setiap kolom</span>
+<span class="n">missing_values</span> <span class="o">=</span> <span class="n">df_breast</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="c1"># Menampilkan jumlah nilai yang hilang untuk setiap kolom</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah nilai yang hilang untuk setiap kolom:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">missing_values</span><span class="p">)</span>
+
+<span class="c1"># Mengecek apakah ada nilai yang hilang</span>
+<span class="k">if</span> <span class="n">missing_values</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tidak ada missing value.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Terdapat missing value dalam dataset.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Jumlah nilai yang hilang untuk setiap kolom:
+Clump_thickness                 0
+Uniformity_of_cell_size         0
+Uniformity_of_cell_shape        0
+Marginal_adhesion               0
+Single_epithelial_cell_size     0
+Bare_nuclei                    16
+Bland_chromatin                 0
+Normal_nucleoli                 0
+Mitoses                         0
+Class                           0
+dtype: int64
+Terdapat missing value dalam dataset.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Misalkan df_breast adalah DataFrame Anda</span>
+<span class="c1"># Sebagai contoh, mari kita buat DataFrame dummy dengan kolom &#39;value&#39;</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>  <span class="c1"># Data acak antara 1-10</span>
+<span class="n">df_breast</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">])</span>
+
+<span class="c1"># Fungsi untuk mendeteksi outlier menggunakan metode IQR</span>
+<span class="k">def</span> <span class="nf">detect_outliers_iqr</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">column</span><span class="p">):</span>
+    <span class="n">Q1</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.25</span><span class="p">)</span>
+    <span class="n">Q3</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span>
+    <span class="n">IQR</span> <span class="o">=</span> <span class="n">Q3</span> <span class="o">-</span> <span class="n">Q1</span>
+    <span class="n">lower_bound</span> <span class="o">=</span> <span class="n">Q1</span> <span class="o">-</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="n">IQR</span>
+    <span class="n">upper_bound</span> <span class="o">=</span> <span class="n">Q3</span> <span class="o">+</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="n">IQR</span>
+    <span class="n">outliers</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">lower_bound</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">upper_bound</span><span class="p">)]</span>
+    <span class="k">return</span> <span class="n">outliers</span>
+
+<span class="c1"># Mendeteksi outlier pada kolom &#39;value&#39;</span>
+<span class="n">outliers</span> <span class="o">=</span> <span class="n">detect_outliers_iqr</span><span class="p">(</span><span class="n">df_breast</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+
+<span class="c1"># Menampilkan hasil</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dataframe Breast:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_breast</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Outliers:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">outliers</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Dataframe Breast:
+   value
+0      6
+1      1
+2      4
+3      4
+4      8
+
+Outliers:
+Empty DataFrame
+Columns: [value]
+Index: []
+</pre></div>
+</div>
+</div>
+</div>
+<p>Tidak ada outlier pada dataset diatas</p>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="preprocessing-data">
+<h1>PREPROCESSING DATA<a class="headerlink" href="#preprocessing-data" title="Link to this heading">#</a></h1>
+<p>Dari eksplorasi data diatas, telah ditemukan adanya missing value pada fitur bare_nuclei. Maka akan kita lakukan imputasi atau pengisian missing value menggunakan nilai rata-rata.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">ucimlrepo</span> <span class="kn">import</span> <span class="n">fetch_ucirepo</span> 
+
+<span class="c1"># Fetch dataset </span>
+<span class="n">breast_cancer_wisconsin_original</span> <span class="o">=</span> <span class="n">fetch_ucirepo</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span> 
+
+<span class="c1"># Data (as pandas dataframes) </span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">breast_cancer_wisconsin_original</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">features</span> 
+<span class="n">y</span> <span class="o">=</span> <span class="n">breast_cancer_wisconsin_original</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">targets</span> 
+
+<span class="c1"># Gabungkan features dan targets menjadi satu data frame</span>
+<span class="n">df_breast</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_breast</span> <span class="o">=</span> <span class="n">df_breast</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">mean</span><span class="p">()),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Menampilkan informasi tentang data frame setelah mengisi missing values</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Data frame setelah mengisi missing values:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_breast</span><span class="o">.</span><span class="n">info</span><span class="p">())</span>
+
+<span class="c1"># Menampilkan beberapa baris pertama untuk memastikan pengisian nilai berhasil</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_breast</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+
+<span class="c1"># Simpan DataFrame ke dalam file CSV</span>
+<span class="n">df_breast</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;breast_cancer_2.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Data frame setelah mengisi missing values:
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 699 entries, 0 to 698
+Data columns (total 10 columns):
+ #   Column                       Non-Null Count  Dtype  
+---  ------                       --------------  -----  
+ 0   Clump_thickness              699 non-null    int64  
+ 1   Uniformity_of_cell_size      699 non-null    int64  
+ 2   Uniformity_of_cell_shape     699 non-null    int64  
+ 3   Marginal_adhesion            699 non-null    int64  
+ 4   Single_epithelial_cell_size  699 non-null    int64  
+ 5   Bare_nuclei                  699 non-null    float64
+ 6   Bland_chromatin              699 non-null    int64  
+ 7   Normal_nucleoli              699 non-null    int64  
+ 8   Mitoses                      699 non-null    int64  
+ 9   Class                        699 non-null    int64  
+dtypes: float64(1), int64(9)
+memory usage: 54.7 KB
+None
+   Clump_thickness  Uniformity_of_cell_size  Uniformity_of_cell_shape  \
+0                5                        1                         1   
+1                5                        4                         4   
+2                3                        1                         1   
+3                6                        8                         8   
+4                4                        1                         1   
+
+   Marginal_adhesion  Single_epithelial_cell_size  Bare_nuclei  \
+0                  1                            2          1.0   
+1                  5                            7         10.0   
+2                  1                            2          2.0   
+3                  1                            3          4.0   
+4                  3                            2          1.0   
+
+   Bland_chromatin  Normal_nucleoli  Mitoses  Class  
+0                3                1        1      2  
+1                3                2        1      2  
+2                3                1        1      2  
+3                3                7        1      2  
+4                3                1        1      2  
+</pre></div>
+</div>
+</div>
+</div>
+<p>Setelah itu ditampilkan lagi data framenya, maka sudah dapat kita lihat bahwa tidak ada lagi missing value.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">df_breast</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Clump_thickness</th>
+      <th>Uniformity_of_cell_size</th>
+      <th>Uniformity_of_cell_shape</th>
+      <th>Marginal_adhesion</th>
+      <th>Single_epithelial_cell_size</th>
+      <th>Bare_nuclei</th>
+      <th>Bland_chromatin</th>
+      <th>Normal_nucleoli</th>
+      <th>Mitoses</th>
+      <th>Class</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>5</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1.0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>5</td>
+      <td>4</td>
+      <td>4</td>
+      <td>5</td>
+      <td>7</td>
+      <td>10.0</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2.0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>6</td>
+      <td>8</td>
+      <td>8</td>
+      <td>1</td>
+      <td>3</td>
+      <td>4.0</td>
+      <td>3</td>
+      <td>7</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1.0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>694</th>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>2.0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>695</th>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1.0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>696</th>
+      <td>5</td>
+      <td>10</td>
+      <td>10</td>
+      <td>3</td>
+      <td>7</td>
+      <td>3.0</td>
+      <td>8</td>
+      <td>10</td>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>697</th>
+      <td>4</td>
+      <td>8</td>
+      <td>6</td>
+      <td>4</td>
+      <td>3</td>
+      <td>4.0</td>
+      <td>10</td>
+      <td>6</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>698</th>
+      <td>4</td>
+      <td>8</td>
+      <td>8</td>
+      <td>5</td>
+      <td>4</td>
+      <td>5.0</td>
+      <td>10</td>
+      <td>4</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+<p>699 rows × 10 columns</p>
+</div></div></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="modelling-data">
+<h1>MODELLING DATA<a class="headerlink" href="#modelling-data" title="Link to this heading">#</a></h1>
+<p>Setelah preprocessing atau penyiapan data selesai dilakukan. Maka pada langkah ini, kita akan mencari nilai akurasi pada setiap model yang akan kita gunakan.</p>
+<section id="knn">
+<h2>KNN<a class="headerlink" href="#knn" title="Link to this heading">#</a></h2>
+<p>K-Nearest Neighbors (KNN) adalah algoritma pembelajaran mesin yang digunakan untuk klasifikasi dan regresi. Algoritma ini bekerja dengan cara berikut:</p>
+<ol class="arabic simple">
+<li><p>Penentuan K: Pilih jumlah tetangga terdekat (K).</p></li>
+<li><p>Menghitung Jarak: Hitung jarak antara data baru dan semua data di set pelatihan menggunakan metrik seperti jarak Euclidean.</p></li>
+<li><p>dentifikasi Tetangga: Pilih K tetangga terdekat berdasarkan jarak yang telah dihitung.</p></li>
+<li><p>Prediksi:</p>
+<ul class="simple">
+<li><p>Klasifikasi: Data baru diberi label berdasarkan mayoritas kelas dari K tetangga terdekat.</p></li>
+<li><p>Regresi: Prediksi nilai berdasarkan rata-rata dari K tetangga terdekat.</p></li>
+</ul>
+</li>
+</ol>
+<p>KNN mudah diimplementasikan, namun bisa menjadi lambat dengan dataset besar karena perlu menghitung jarak ke semua data pelatihan.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+
+<span class="c1"># Asumsikan df_breast sudah terisi missing values menggunakan rata-rata</span>
+<span class="n">df_breast</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;breast_cancer_2.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># Memisahkan features dan target</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">df_breast</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s1">&#39;Class&#39;</span><span class="p">)</span>  <span class="c1"># Ganti &#39;Class&#39; dengan nama kolom target jika berbeda</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df_breast</span><span class="p">[</span><span class="s1">&#39;Class&#39;</span><span class="p">]</span>
+
+<span class="c1"># Membagi data menjadi set pelatihan dan pengujian</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="c1"># Standardisasi fitur</span>
+<span class="n">scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+<span class="n">X_train</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+<span class="n">X_test</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="c1"># Melatih model KNN</span>
+<span class="n">knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>  <span class="c1"># Anda bisa mengubah jumlah tetangga jika diperlukan</span>
+<span class="n">knn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># Memprediksi data uji</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">knn</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="c1"># Mengevaluasi akurasi model</span>
+<span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Akurasi model KNN: </span><span class="si">{</span><span class="n">accuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Akurasi model KNN: 0.97
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="naive-bayes">
+<h2>NAIVE BAYES<a class="headerlink" href="#naive-bayes" title="Link to this heading">#</a></h2>
+<p>Naive Bayes adalah kelompok algoritma klasifikasi sederhana yang berdasarkan pada penerapan teorema Bayes dengan asumsi kemandirian antar fitur. Berikut penjelasannya:</p>
+<ol class="arabic simple">
+<li><p>Asumsi Sederhana: Algoritma ini mengasumsikan bahwa fitur-fitur dalam dataset independen satu sama lain, yang seringkali tidak realistis dalam dunia nyata (itulah sebabnya disebut “naive”).</p></li>
+<li><p>Teorema Bayes: Menggunakan teorema Bayes untuk menghitung probabilitas kelas target dengan mengalikan probabilitas fitur yang diberikan kelas target.</p></li>
+<li><p>Klasifikasi: Pilih kelas dengan probabilitas tertinggi sebagai prediksi.</p></li>
+</ol>
+<p>Kelebihan Naive Bayes adalah cepat, mudah diimplementasikan, dan bekerja dengan baik pada dataset besar dan berbagai masalah klasifikasi seperti spam detection dan sentiment analysis, meskipun asumsi independensi yang diambilnya jarang benar dalam kenyataan.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+
+<span class="c1"># Asumsikan df_breast sudah terisi missing values menggunakan rata-rata</span>
+<span class="n">df_breast</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;breast_cancer_2.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># Memisahkan features dan target</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">df_breast</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s1">&#39;Class&#39;</span><span class="p">)</span>  <span class="c1"># Ganti &#39;Class&#39; dengan nama kolom target jika berbeda</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df_breast</span><span class="p">[</span><span class="s1">&#39;Class&#39;</span><span class="p">]</span>
+
+<span class="c1"># Membagi data menjadi set pelatihan dan pengujian</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="c1"># Standardisasi fitur</span>
+<span class="n">scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+<span class="n">X_train</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+<span class="n">X_test</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="c1"># Membuat dan melatih model Naive Bayes</span>
+<span class="n">nb</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
+<span class="n">nb</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># Memprediksi data uji dengan Naive Bayes</span>
+<span class="n">y_pred_nb</span> <span class="o">=</span> <span class="n">nb</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="c1"># Mengevaluasi akurasi model Naive Bayes</span>
+<span class="n">accuracy_nb</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_nb</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Akurasi model Naive Bayes: </span><span class="si">{</span><span class="n">accuracy_nb</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Akurasi model Naive Bayes: 0.96
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="stacking-classifier">
+<h2>Stacking Classifier<a class="headerlink" href="#stacking-classifier" title="Link to this heading">#</a></h2>
+<p>Stacking Classifier adalah metode ensemble learning yang menggabungkan beberapa model pembelajaran mesin (base classifiers) untuk meningkatkan performa prediksi. Berikut adalah penjelasan singkat tentang Stacking Classifier:</p>
+<ol class="arabic simple">
+<li><p>Komponen Utama: Terdiri dari beberapa model pembelajaran mesin (base classifiers) yang berbeda.</p></li>
+<li><p>Metode: Hasil prediksi dari base classifiers digunakan sebagai input untuk final estimator (meta classifier).</p></li>
+<li><p>Meta Classifier: Menggunakan hasil prediksi dari base classifiers untuk membuat prediksi akhir.</p></li>
+<li><p>Tujuan: Mengkombinasikan kekuatan dari beberapa model untuk menghasilkan prediksi yang lebih baik daripada menggunakan model tunggal.</p></li>
+<li><p>Implementasi: Dapat menggunakan berbagai jenis base classifiers dan meta classifiers sesuai dengan kebutuhan dan karakteristik dataset.</p></li>
+</ol>
+<p>Kelebihan Stacking Classifier termasuk kemampuannya mengurangi overfitting dan meningkatkan akurasi prediksi, namun perlu memperhatikan kompleksitas dan penyesuaian yang diperlukan dalam penyetelan model.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install paket yang diperlukan</span>
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>ucimlrepo<span class="w"> </span>scikit-learn
+
+<span class="c1"># Import library yang diperlukan</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">StackingClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+
+<span class="c1"># Mengambil dataset dari file CSV</span>
+<span class="n">breast</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;breast_cancer_2.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># Pisahkan fitur dan label</span>
+<span class="n">feature_columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Clump_thickness&quot;</span><span class="p">,</span> <span class="s2">&quot;Uniformity_of_cell_size&quot;</span><span class="p">,</span> <span class="s2">&quot;Uniformity_of_cell_shape&quot;</span><span class="p">,</span> <span class="s2">&quot;Marginal_adhesion&quot;</span><span class="p">,</span>
+                   <span class="s2">&quot;Single_epithelial_cell_size&quot;</span><span class="p">,</span> <span class="s2">&quot;Bare_nuclei&quot;</span><span class="p">,</span> <span class="s2">&quot;Bland_chromatin&quot;</span><span class="p">,</span> <span class="s2">&quot;Normal_nucleoli&quot;</span><span class="p">,</span> <span class="s2">&quot;Mitoses&quot;</span><span class="p">]</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">breast</span><span class="p">[</span><span class="n">feature_columns</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">breast</span><span class="p">[</span><span class="s1">&#39;Class&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+
+<span class="c1"># Encode labels</span>
+<span class="n">label_encoder</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+<span class="n">y_encoded</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+
+<span class="c1"># Bagi data menjadi set pelatihan dan pengujian</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y_encoded</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Inisialisasi classifier KNN dengan k=3</span>
+<span class="n">knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="c1"># Inisialisasi Stacking Classifier</span>
+<span class="n">estimators</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;knn&#39;</span><span class="p">,</span> <span class="n">knn</span><span class="p">)]</span>
+<span class="n">stacking_classifier</span> <span class="o">=</span> <span class="n">StackingClassifier</span><span class="p">(</span><span class="n">estimators</span><span class="o">=</span><span class="n">estimators</span><span class="p">,</span> <span class="n">final_estimator</span><span class="o">=</span><span class="n">LogisticRegression</span><span class="p">())</span>
+
+<span class="c1"># Latih model pada set pelatihan</span>
+<span class="n">stacking_classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># Evaluasi model pada data pelatihan</span>
+<span class="n">XTrain1</span> <span class="o">=</span> <span class="n">stacking_classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy Train:&quot;</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_train</span><span class="p">,</span> <span class="n">XTrain1</span><span class="p">))</span>
+
+<span class="c1"># Evaluasi model pada data pengujian</span>
+<span class="n">XTest1</span> <span class="o">=</span> <span class="n">stacking_classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy Test:&quot;</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">XTest1</span><span class="p">))</span>
+
+<span class="c1"># Prediksi untuk instance baru</span>
+<span class="n">new_data</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">]]</span>
+<span class="n">prediction</span> <span class="o">=</span> <span class="n">stacking_classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">new_data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prediksi untuk data inputan baru:&quot;</span><span class="p">,</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">prediction</span><span class="p">),</span> <span class="s2">&quot;Atau&quot;</span> <span class="p">,</span> <span class="n">prediction</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: ucimlrepo in c:\users\azgar\appdata\local\programs\python\python310\lib\site-packages (0.0.7)
+Requirement already satisfied: scikit-learn in c:\users\azgar\appdata\local\programs\python\python310\lib\site-packages (1.5.0)
+Requirement already satisfied: certifi&gt;=2020.12.5 in c:\users\azgar\appdata\local\programs\python\python310\lib\site-packages (from ucimlrepo) (2022.12.7)
+Requirement already satisfied: pandas&gt;=1.0.0 in c:\users\azgar\appdata\local\programs\python\python310\lib\site-packages (from ucimlrepo) (2.2.2)
+Requirement already satisfied: joblib&gt;=1.2.0 in c:\users\azgar\appdata\local\programs\python\python310\lib\site-packages (from scikit-learn) (1.4.2)
+Requirement already satisfied: threadpoolctl&gt;=3.1.0 in c:\users\azgar\appdata\local\programs\python\python310\lib\site-packages (from scikit-learn) (3.5.0)
+Requirement already satisfied: numpy&gt;=1.19.5 in c:\users\azgar\appdata\local\programs\python\python310\lib\site-packages (from scikit-learn) (1.24.3)
+Requirement already satisfied: scipy&gt;=1.6.0 in c:\users\azgar\appdata\local\programs\python\python310\lib\site-packages (from scikit-learn) (1.13.0)
+Requirement already satisfied: pytz&gt;=2020.1 in c:\users\azgar\appdata\local\programs\python\python310\lib\site-packages (from pandas&gt;=1.0.0-&gt;ucimlrepo) (2022.6)
+Requirement already satisfied: tzdata&gt;=2022.7 in c:\users\azgar\appdata\local\programs\python\python310\lib\site-packages (from pandas&gt;=1.0.0-&gt;ucimlrepo) (2024.1)
+Requirement already satisfied: python-dateutil&gt;=2.8.2 in c:\users\azgar\appdata\local\programs\python\python310\lib\site-packages (from pandas&gt;=1.0.0-&gt;ucimlrepo) (2.8.2)
+Requirement already satisfied: six&gt;=1.5 in c:\users\azgar\appdata\local\programs\python\python310\lib\site-packages (from python-dateutil&gt;=2.8.2-&gt;pandas&gt;=1.0.0-&gt;ucimlrepo) (1.16.0)
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[notice] A new release of pip available: 22.2.2 -&gt; 24.1
+[notice] To update, run: C:\Users\azgar\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span> <span class="p">[</span><span class="mi">15</span><span class="p">],</span> <span class="n">line</span> <span class="mi">13</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="ne">---&gt; </span><span class="mi">13</span> <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span> <span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">run_line_magic</span><span class="p">(</span><span class="s1">&#39;matplotlib&#39;</span><span class="p">,</span> <span class="s1">&#39;inline&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span> <span class="c1"># Mengambil dataset dari file CSV</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;seaborn&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install paket yang diperlukan</span>
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>ucimlrepo
+
+<span class="c1"># Import library yang diperlukan</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+
+<span class="c1"># Mengambil dataset dari file CSV</span>
+<span class="n">breast</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;breast_cancer_2.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># Pisahkan fitur dan label</span>
+<span class="n">feature_columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Clump_thickness&quot;</span><span class="p">,</span> <span class="s2">&quot;Uniformity_of_cell_size&quot;</span><span class="p">,</span> <span class="s2">&quot;Uniformity_of_cell_shape&quot;</span><span class="p">,</span> <span class="s2">&quot;Marginal_adhesion&quot;</span><span class="p">,</span>
+                   <span class="s2">&quot;Single_epithelial_cell_size&quot;</span><span class="p">,</span> <span class="s2">&quot;Bare_nuclei&quot;</span><span class="p">,</span> <span class="s2">&quot;Bland_chromatin&quot;</span><span class="p">,</span> <span class="s2">&quot;Normal_nucleoli&quot;</span><span class="p">,</span> <span class="s2">&quot;Mitoses&quot;</span><span class="p">]</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">breast</span><span class="p">[</span><span class="n">feature_columns</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">breast</span><span class="p">[</span><span class="s1">&#39;Class&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+
+<span class="c1"># Encode labels</span>
+<span class="n">label_encoder</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+<span class="n">y_encoded</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+
+<span class="c1"># Bagi data menjadi set pelatihan dan pengujian</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y_encoded</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Inisialisasi classifier KNN dengan k=5</span>
+<span class="n">classifier2</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="c1"># Latih model pada set pelatihan</span>
+<span class="n">classifier2</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># Evaluasi model pada data pelatihan</span>
+<span class="n">XTrain2</span> <span class="o">=</span> <span class="n">classifier2</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy Train:&quot;</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_train</span><span class="p">,</span> <span class="n">XTrain2</span><span class="p">))</span>
+
+<span class="n">classifier2</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">classifier2</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+<span class="c1"># Evaluasi model pada data pengujian</span>
+<span class="n">XTest2</span> <span class="o">=</span> <span class="n">classifier2</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy Test:&quot;</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">XTest2</span><span class="p">))</span>
+
+<span class="c1"># Prediksi untuk instance baru</span>
+<span class="n">new_data</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">]]</span>
+<span class="n">prediction2</span> <span class="o">=</span> <span class="n">classifier2</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">new_data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prediksi untuk data inputan baru:&quot;</span><span class="p">,</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">prediction2</span><span class="p">),</span> <span class="s2">&quot;Atau&quot;</span><span class="p">,</span> <span class="n">prediction2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: ucimlrepo in /root/venv/lib/python3.9/site-packages (0.0.7)
+Requirement already satisfied: pandas&gt;=1.0.0 in /shared-libs/python3.9/py/lib/python3.9/site-packages (from ucimlrepo) (2.1.4)
+Requirement already satisfied: certifi&gt;=2020.12.5 in /shared-libs/python3.9/py/lib/python3.9/site-packages (from ucimlrepo) (2022.9.24)
+Requirement already satisfied: numpy&lt;2,&gt;=1.22.4 in /shared-libs/python3.9/py/lib/python3.9/site-packages (from pandas&gt;=1.0.0-&gt;ucimlrepo) (1.23.4)
+Requirement already satisfied: pytz&gt;=2020.1 in /shared-libs/python3.9/py/lib/python3.9/site-packages (from pandas&gt;=1.0.0-&gt;ucimlrepo) (2022.5)
+Requirement already satisfied: tzdata&gt;=2022.1 in /shared-libs/python3.9/py/lib/python3.9/site-packages (from pandas&gt;=1.0.0-&gt;ucimlrepo) (2022.5)
+Requirement already satisfied: python-dateutil&gt;=2.8.2 in /shared-libs/python3.9/py-core/lib/python3.9/site-packages (from pandas&gt;=1.0.0-&gt;ucimlrepo) (2.8.2)
+Requirement already satisfied: six&gt;=1.5 in /shared-libs/python3.9/py-core/lib/python3.9/site-packages (from python-dateutil&gt;=2.8.2-&gt;pandas&gt;=1.0.0-&gt;ucimlrepo) (1.16.0)
+
+<span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> A new release of pip is available: <span class=" -Color -Color-Red">23.0.1</span> -&gt; <span class=" -Color -Color-Green">24.1</span>
+<span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> To update, run: <span class=" -Color -Color-Green">pip install --upgrade pip</span>
+Accuracy Train: 0.9713774597495528
+Accuracy Test: 0.9714285714285714
+Prediksi untuk data inputan baru: [4] Atau [1]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">combined_train_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;P1&#39;</span><span class="p">:</span> <span class="n">XTrain1</span><span class="p">,</span>
+    <span class="s1">&#39;P2&#39;</span><span class="p">:</span> <span class="n">XTrain2</span><span class="p">,</span>
+    <span class="s1">&#39;Y&#39;</span><span class="p">:</span> <span class="n">y_train</span>
+<span class="p">})</span>
+<span class="c1"># Buat DataFrame gabungan untuk data pengujian</span>
+<span class="n">combined_train_df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;P1&#39;</span><span class="p">:</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">XTrain1</span><span class="p">),</span>
+    <span class="s1">&#39;P2&#39;</span><span class="p">:</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">XTrain2</span><span class="p">),</span>
+    <span class="s1">&#39;Y&#39;</span><span class="p">:</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">y_train</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="c1"># Simpan DataFrame ke file CSV untuk data pengujian</span>
+<span class="n">combined_train_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;combine_train_breast.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">combined_train_df1</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;combine_train1_breast.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">combined_test_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;P1&#39;</span><span class="p">:</span> <span class="n">XTest1</span><span class="p">,</span>
+    <span class="s1">&#39;P2&#39;</span><span class="p">:</span> <span class="n">XTest2</span><span class="p">,</span>
+    <span class="s1">&#39;Y&#39;</span><span class="p">:</span> <span class="n">y_test</span>
+<span class="p">})</span>
+<span class="c1"># Buat DataFrame gabungan untuk data pengujian</span>
+<span class="n">combined_test_df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;P1&#39;</span><span class="p">:</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">XTest1</span><span class="p">),</span>
+    <span class="s1">&#39;P2&#39;</span><span class="p">:</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">XTest2</span><span class="p">),</span>
+    <span class="s1">&#39;Y&#39;</span><span class="p">:</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">y_test</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="c1"># Simpan DataFrame ke file CSV untuk data pengujian</span>
+<span class="n">combined_test_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;combine_test_breast.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">combined_test_df1</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;combine_test1_breast.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;combine_train_breast.csv&#39;</span><span class="p">)</span>
+<span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>P1</th>
+      <th>P2</th>
+      <th>Y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>554</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>555</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>556</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>557</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>558</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>559 rows × 3 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;combine_train1_breast.csv&#39;</span><span class="p">)</span>
+<span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>P1</th>
+      <th>P2</th>
+      <th>Y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>554</th>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>555</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>556</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>557</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>558</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+<p>559 rows × 3 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;combine_test_breast.csv&#39;</span><span class="p">)</span>
+<span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>P1</th>
+      <th>P2</th>
+      <th>Y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>135</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>136</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>137</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>138</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>139</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>140 rows × 3 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;combine_test1_breast.csv&#39;</span><span class="p">)</span>
+<span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>P1</th>
+      <th>P2</th>
+      <th>Y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>4</td>
+      <td>4</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>135</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>136</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>137</th>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>138</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>139</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+<p>140 rows × 3 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># GNB</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">precision_score</span><span class="p">,</span> <span class="n">recall_score</span><span class="p">,</span> <span class="n">f1_score</span>
+<span class="kn">from</span> <span class="nn">ucimlrepo</span> <span class="kn">import</span> <span class="n">fetch_ucirepo</span> 
+
+<span class="c1"># Menggabungkan prediksi dari kedua model KNN sebagai fitur baru</span>
+<span class="n">f_meta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">column_stack</span><span class="p">((</span><span class="n">XTrain1</span><span class="p">,</span> <span class="n">XTrain2</span><span class="p">))</span>
+<span class="n">X_test</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">column_stack</span><span class="p">((</span><span class="n">XTest1</span><span class="p">,</span> <span class="n">XTest2</span><span class="p">))</span>
+
+<span class="c1"># Inisialisasi dan pelatihan meta-classifier Naive Bayes</span>
+<span class="n">meta_classifier</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
+<span class="n">meta_classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">f_meta</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">predict</span> <span class="o">=</span> <span class="n">meta_classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="nb">print</span> <span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">X_test</span><span class="p">))</span>
+
+<span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">predict</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">accuracy</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">meta_classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]]))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;numpy.ndarray&#39;&gt;
+0.9785714285714285
+[1]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="bagging-bootstrap-aggregating">
+<h2>Bagging (Bootstrap Aggregating)<a class="headerlink" href="#bagging-bootstrap-aggregating" title="Link to this heading">#</a></h2>
+<p>Bagging (Bootstrap Aggregating) adalah teknik ensemble learning yang menggunakan beberapa model (biasanya model pembelajaran mesin yang sama) untuk membuat prediksi. Berikut adalah penjelasan singkat tentang Bagging:</p>
+<ol class="arabic simple">
+<li><p>Bootstrap Sampling: Bagging menggunakan teknik bootstrap untuk membuat dataset baru secara acak dengan penggantian dari dataset pelatihan yang ada. Ini berarti beberapa sampel dari dataset asli dipilih secara acak untuk membentuk dataset baru untuk setiap model.</p></li>
+</ol>
+<ol class="arabic simple" start="2">
+<li><p>Model Paralel: Setiap dataset bootstrap digunakan untuk melatih model yang sama, biasanya menggunakan algoritma yang kuat seperti Decision Trees atau Neural Networks.</p></li>
+</ol>
+<ol class="arabic simple" start="3">
+<li><p>Aggregasi Prediksi: Setelah model-model dilatih, Bagging menggabungkan prediksi dari setiap model dengan cara agregasi, misalnya menggunakan rata-rata (untuk regresi) atau modus (untuk klasifikasi), untuk menghasilkan prediksi akhir.</p></li>
+</ol>
+<ol class="arabic simple" start="4">
+<li><p>Tujuan: Bagging bertujuan untuk mengurangi varians dalam model yang dihasilkan, karena model-model yang berbeda melihat dataset bootstrap yang berbeda, sehingga menghasilkan prediksi yang lebih stabil dan umumnya lebih baik daripada model tunggal.</p></li>
+</ol>
+<ol class="arabic simple" start="5">
+<li><p>Kelebihan: Meningkatkan keakuratan dan kestabilan model, mengurangi overfitting, dan cocok digunakan dengan model yang kompleks atau rentan terhadap variasi data.</p></li>
+</ol>
+<p>Bagging sering digunakan dalam algoritma seperti Random Forest, yang merupakan implementasi populer dari teknik Bagging dengan Decision Trees sebagai base estimator-nya.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install paket yang diperlukan</span>
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>matplotlib
+
+<span class="c1"># Import library yang diperlukan</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">BaggingClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="kn">from</span> <span class="nn">sklearn.exceptions</span> <span class="kn">import</span> <span class="n">DataConversionWarning</span>
+
+<span class="c1"># Suppress the DataConversionWarning</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="n">DataConversionWarning</span><span class="p">)</span>
+
+<span class="c1"># Memuat dataset dari file CSV</span>
+<span class="n">breast</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;breast_cancer_2.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># Pisahkan fitur dan label</span>
+<span class="n">feature_columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Clump_thickness&quot;</span><span class="p">,</span> <span class="s2">&quot;Uniformity_of_cell_size&quot;</span><span class="p">,</span> <span class="s2">&quot;Uniformity_of_cell_shape&quot;</span><span class="p">,</span> <span class="s2">&quot;Marginal_adhesion&quot;</span><span class="p">,</span>
+                   <span class="s2">&quot;Single_epithelial_cell_size&quot;</span><span class="p">,</span> <span class="s2">&quot;Bare_nuclei&quot;</span><span class="p">,</span> <span class="s2">&quot;Bland_chromatin&quot;</span><span class="p">,</span> <span class="s2">&quot;Normal_nucleoli&quot;</span><span class="p">,</span> <span class="s2">&quot;Mitoses&quot;</span><span class="p">]</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">breast</span><span class="p">[</span><span class="n">feature_columns</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">breast</span><span class="p">[</span><span class="s1">&#39;Class&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+
+<span class="c1"># Encode labels</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
+<span class="n">label_encoder</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+<span class="n">y_encoded</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+
+<span class="c1"># Bagi data menjadi set pelatihan dan pengujian</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y_encoded</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">akurasi</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">n_est</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># Loop over n_estimators from 3 to 20</span>
+<span class="k">for</span> <span class="n">n_estimator</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">21</span><span class="p">):</span>
+    <span class="c1"># Initialize and fit the BaggingClassifier with GaussianNB as the base estimator</span>
+    <span class="n">clf</span> <span class="o">=</span> <span class="n">BaggingClassifier</span><span class="p">(</span><span class="n">base_estimator</span><span class="o">=</span><span class="n">GaussianNB</span><span class="p">(),</span> <span class="n">n_estimators</span><span class="o">=</span><span class="n">n_estimator</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+    
+    <span class="c1"># Predict the labels for the test set</span>
+    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+    
+    <span class="c1"># Calculate and print the accuracy</span>
+    <span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="n">akurasi</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">accuracy</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+    <span class="n">n_est</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n_estimator</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;n_estimators: </span><span class="si">{</span><span class="n">n_estimator</span><span class="si">}</span><span class="s2">, Accuracy: </span><span class="si">{</span><span class="n">accuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Plotting the results</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">n_est</span><span class="p">,</span> <span class="n">akurasi</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Accuracy vs. Number of Estimators&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Number of Estimators&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Accuracy&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: matplotlib in /shared-libs/python3.9/py/lib/python3.9/site-packages (3.6.0)
+Requirement already satisfied: kiwisolver&gt;=1.0.1 in /shared-libs/python3.9/py/lib/python3.9/site-packages (from matplotlib) (1.4.4)
+Requirement already satisfied: packaging&gt;=20.0 in /shared-libs/python3.9/py-core/lib/python3.9/site-packages (from matplotlib) (21.3)
+Requirement already satisfied: pillow&gt;=6.2.0 in /shared-libs/python3.9/py/lib/python3.9/site-packages (from matplotlib) (9.2.0)
+Requirement already satisfied: cycler&gt;=0.10 in /shared-libs/python3.9/py/lib/python3.9/site-packages (from matplotlib) (0.11.0)
+Requirement already satisfied: python-dateutil&gt;=2.7 in /shared-libs/python3.9/py-core/lib/python3.9/site-packages (from matplotlib) (2.8.2)
+Requirement already satisfied: contourpy&gt;=1.0.1 in /shared-libs/python3.9/py/lib/python3.9/site-packages (from matplotlib) (1.0.5)
+Requirement already satisfied: numpy&gt;=1.19 in /shared-libs/python3.9/py/lib/python3.9/site-packages (from matplotlib) (1.23.4)
+Requirement already satisfied: pyparsing&gt;=2.2.1 in /shared-libs/python3.9/py-core/lib/python3.9/site-packages (from matplotlib) (3.0.9)
+Requirement already satisfied: fonttools&gt;=4.22.0 in /shared-libs/python3.9/py/lib/python3.9/site-packages (from matplotlib) (4.37.4)
+Requirement already satisfied: six&gt;=1.5 in /shared-libs/python3.9/py-core/lib/python3.9/site-packages (from python-dateutil&gt;=2.7-&gt;matplotlib) (1.16.0)
+
+<span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> A new release of pip is available: <span class=" -Color -Color-Red">23.0.1</span> -&gt; <span class=" -Color -Color-Green">24.1</span>
+<span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> To update, run: <span class=" -Color -Color-Green">pip install --upgrade pip</span>
+n_estimators: 3, Accuracy: 0.96
+n_estimators: 4, Accuracy: 0.96
+n_estimators: 5, Accuracy: 0.96
+n_estimators: 6, Accuracy: 0.96
+n_estimators: 7, Accuracy: 0.96
+n_estimators: 8, Accuracy: 0.96
+n_estimators: 9, Accuracy: 0.96
+n_estimators: 10, Accuracy: 0.96
+n_estimators: 11, Accuracy: 0.96
+n_estimators: 12, Accuracy: 0.96
+n_estimators: 13, Accuracy: 0.96
+n_estimators: 14, Accuracy: 0.96
+n_estimators: 15, Accuracy: 0.96
+n_estimators: 16, Accuracy: 0.96
+n_estimators: 17, Accuracy: 0.96
+n_estimators: 18, Accuracy: 0.96
+n_estimators: 19, Accuracy: 0.96
+n_estimators: 20, Accuracy: 0.96
+</pre></div>
+</div>
+<img alt="_images/fbd25f4d73a0e887ff37f3b64ebcb984c37c9c7e73cc10d63810f064b33e61f0.png" src="_images/fbd25f4d73a0e887ff37f3b64ebcb984c37c9c7e73cc10d63810f064b33e61f0.png" />
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="hasil-implementasi">
+<h1>HASIL IMPLEMENTASI<a class="headerlink" href="#hasil-implementasi" title="Link to this heading">#</a></h1>
+<p>Link Hasil Implementasi Aplikasi : <a class="reference external" href="https://widiyaningsih.pythonanywhere.com/">https://widiyaningsih.pythonanywhere.com/</a></p>
+<p>Aplikasi ini menggunakan metode Stacking karena metode stacking memiliki akurasi paling besar yakni : 97,8%</p>
+<img src="gambar/image-20240627-001453.png" width="" align="" /><p>Halaman ketikaq diinputp</p>
+<img src="gambar/image-20240627-001751.png" width="" align="" /><a style='text-decoration:none;line-height:16px;display:flex;color:#5B5B62;padding:10px;justify-content:end;' href='https://deepnote.com?utm_source=created-in-deepnote-cell&projectId=8556010b-bf85-4e7b-a125-5d1cc55a36c2' target="_blank">
+<img alt='Created in deepnote.com' style='display:inline;max-height:16px;margin:0px;margin-right:7.5px;' src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iODBweCIgaGVpZ2h0PSI4MHB4IiB2aWV3Qm94PSIwIDAgODAgODAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU0LjEgKDc2NDkwKSAtIGh0dHBzOi8vc2tldGNoYXBwLmNvbSAtLT4KICAgIDx0aXRsZT5Hcm91cCAzPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IkxhbmRpbmciIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJBcnRib2FyZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEyMzUuMDAwMDAwLCAtNzkuMDAwMDAwKSI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjM1LjAwMDAwMCwgNzkuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iUGF0aC0yMCIgZmlsbD0iIzAyNjVCNCIgcG9pbnRzPSIyLjM3NjIzNzYyIDgwIDM4LjA0NzY2NjcgODAgNTcuODIxNzgyMiA3My44MDU3NTkyIDU3LjgyMTc4MjIgMzIuNzU5MjczOSAzOS4xNDAyMjc4IDMxLjY4MzE2ODMiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0zNS4wMDc3MTgsODAgQzQyLjkwNjIwMDcsNzYuNDU0OTM1OCA0Ny41NjQ5MTY3LDcxLjU0MjI2NzEgNDguOTgzODY2LDY1LjI2MTk5MzkgQzUxLjExMjI4OTksNTUuODQxNTg0MiA0MS42NzcxNzk1LDQ5LjIxMjIyODQgMjUuNjIzOTg0Niw0OS4yMTIyMjg0IEMyNS40ODQ5Mjg5LDQ5LjEyNjg0NDggMjkuODI2MTI5Niw0My4yODM4MjQ4IDM4LjY0NzU4NjksMzEuNjgzMTY4MyBMNzIuODcxMjg3MSwzMi41NTQ0MjUgTDY1LjI4MDk3Myw2Ny42NzYzNDIxIEw1MS4xMTIyODk5LDc3LjM3NjE0NCBMMzUuMDA3NzE4LDgwIFoiIGlkPSJQYXRoLTIyIiBmaWxsPSIjMDAyODY4Ij48L3BhdGg+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMCwzNy43MzA0NDA1IEwyNy4xMTQ1MzcsMC4yNTcxMTE0MzYgQzYyLjM3MTUxMjMsLTEuOTkwNzE3MDEgODAsMTAuNTAwMzkyNyA4MCwzNy43MzA0NDA1IEM4MCw2NC45NjA0ODgyIDY0Ljc3NjUwMzgsNzkuMDUwMzQxNCAzNC4zMjk1MTEzLDgwIEM0Ny4wNTUzNDg5LDc3LjU2NzA4MDggNTMuNDE4MjY3Nyw3MC4zMTM2MTAzIDUzLjQxODI2NzcsNTguMjM5NTg4NSBDNTMuNDE4MjY3Nyw0MC4xMjg1NTU3IDM2LjMwMzk1NDQsMzcuNzMwNDQwNSAyNS4yMjc0MTcsMzcuNzMwNDQwNSBDMTcuODQzMDU4NiwzNy43MzA0NDA1IDkuNDMzOTE5NjYsMzcuNzMwNDQwNSAwLDM3LjczMDQ0MDUgWiIgaWQ9IlBhdGgtMTkiIGZpbGw9IiMzNzkzRUYiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+' > </img>
+Created in <span style='font-weight:600;margin-left:4px;'>Deepnote</span></a></section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="markdown.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Markdown Files</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="markdown-notebooks.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Notebooks with MyST Markdown</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">BREAST CANCER</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan-studi-kasus-breast-cancer">TUJUAN STUDI KASUS BREAST CANCER</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">PENGERTIAN</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fitur-fitur-yang-perlu-dipahami">FITUR-FITUR YANG PERLU DIPAHAMI</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding">DATA UNDERSTANDING</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collecting-data-mengumpulkan-data">COLLECTING DATA(MENGUMPULKAN DATA)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataframe-breast-cancer">DATAFRAME BREAST CANCER</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jumlah-data">Jumlah Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipe-data-pada-setiap-fitur">TIPE DATA PADA SETIAP FITUR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eksplorasi-data">EKSPLORASI DATA</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikasi-kualitas-data">IDENTIFIKASI KUALITAS DATA</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikasi-missing-value">IDENTIFIKASI MISSING VALUE</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-data">PREPROCESSING DATA</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#modelling-data">MODELLING DATA</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#knn">KNN</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naive-bayes">NAIVE BAYES</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stacking-classifier">Stacking Classifier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bagging-bootstrap-aggregating">Bagging (Bootstrap Aggregating)</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-implementasi">HASIL IMPLEMENTASI</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="assets/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="assets/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

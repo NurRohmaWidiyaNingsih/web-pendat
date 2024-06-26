@@ -1,0 +1,87 @@
+Traceback (most recent call last):
+  File "C:\Users\azgar\AppData\Local\Programs\Python\Python310\lib\site-packages\jupyter_cache\executors\utils.py", line 58, in single_nb_execution
+    executenb(
+  File "C:\Users\azgar\AppData\Local\Programs\Python\Python310\lib\site-packages\nbclient\client.py", line 1269, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "C:\Users\azgar\AppData\Local\Programs\Python\Python310\lib\site-packages\nbclient\util.py", line 85, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "C:\Users\azgar\AppData\Local\Programs\Python\Python310\lib\site-packages\nbclient\util.py", line 60, in just_run
+    return loop.run_until_complete(coro)
+  File "C:\Users\azgar\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 646, in run_until_complete
+    return future.result()
+  File "C:\Users\azgar\AppData\Local\Programs\Python\Python310\lib\site-packages\nbclient\client.py", line 707, in async_execute
+    await self.async_execute_cell(
+  File "C:\Users\azgar\AppData\Local\Programs\Python\Python310\lib\site-packages\nbclient\client.py", line 1025, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\azgar\AppData\Local\Programs\Python\Python310\lib\site-packages\nbclient\client.py", line 919, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# Install paket yang diperlukan
+!pip install ucimlrepo scikit-learn
+
+# Import library yang diperlukan
+import pandas as pd
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import accuracy_score
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+from sklearn.ensemble import StackingClassifier
+from sklearn.linear_model import LogisticRegression
+import matplotlib.pyplot as plt
+import seaborn as sns
+%matplotlib inline
+
+# Mengambil dataset dari file CSV
+breast = pd.read_csv('breast_cancer_2.csv')
+
+# Pisahkan fitur dan label
+feature_columns = ["Clump_thickness", "Uniformity_of_cell_size", "Uniformity_of_cell_shape", "Marginal_adhesion",
+                   "Single_epithelial_cell_size", "Bare_nuclei", "Bland_chromatin", "Normal_nucleoli", "Mitoses"]
+X = breast[feature_columns].values
+y = breast['Class'].values
+
+# Encode labels
+label_encoder = LabelEncoder()
+y_encoded = label_encoder.fit_transform(y)
+
+# Bagi data menjadi set pelatihan dan pengujian
+X_train, X_test, y_train, y_test = train_test_split(X, y_encoded, test_size=0.2, random_state=0)
+
+# Inisialisasi classifier KNN dengan k=3
+knn = KNeighborsClassifier(n_neighbors=3)
+
+# Inisialisasi Stacking Classifier
+estimators = [('knn', knn)]
+stacking_classifier = StackingClassifier(estimators=estimators, final_estimator=LogisticRegression())
+
+# Latih model pada set pelatihan
+stacking_classifier.fit(X_train, y_train)
+
+# Evaluasi model pada data pelatihan
+XTrain1 = stacking_classifier.predict(X_train)
+print("Accuracy Train:", accuracy_score(y_train, XTrain1))
+
+# Evaluasi model pada data pengujian
+XTest1 = stacking_classifier.predict(X_test)
+print("Accuracy Test:", accuracy_score(y_test, XTest1))
+
+# Prediksi untuk instance baru
+new_data = [[2, 3, 5, 7, 4, 10, 8, 4, 6]]
+prediction = stacking_classifier.predict(new_data)
+print("Prediksi untuk data inputan baru:", label_encoder.inverse_transform(prediction), "Atau" , prediction)
+
+------------------
+
+[1;31m---------------------------------------------------------------------------[0m
+[1;31mModuleNotFoundError[0m                       Traceback (most recent call last)
+Cell [1;32mIn [15], line 13[0m
+[0;32m     11[0m [38;5;28;01mfrom[39;00m [38;5;21;01msklearn[39;00m[38;5;21;01m.[39;00m[38;5;21;01mlinear_model[39;00m [38;5;28;01mimport[39;00m LogisticRegression
+[0;32m     12[0m [38;5;28;01mimport[39;00m [38;5;21;01mmatplotlib[39;00m[38;5;21;01m.[39;00m[38;5;21;01mpyplot[39;00m [38;5;28;01mas[39;00m [38;5;21;01mplt[39;00m
+[1;32m---> 13[0m [38;5;28;01mimport[39;00m [38;5;21;01mseaborn[39;00m [38;5;28;01mas[39;00m [38;5;21;01msns[39;00m
+[0;32m     14[0m get_ipython()[38;5;241m.[39mrun_line_magic([38;5;124m'[39m[38;5;124mmatplotlib[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124minline[39m[38;5;124m'[39m)
+[0;32m     16[0m [38;5;66;03m# Mengambil dataset dari file CSV[39;00m
+
+[1;31mModuleNotFoundError[0m: No module named 'seaborn'
+ModuleNotFoundError: No module named 'seaborn'
+
